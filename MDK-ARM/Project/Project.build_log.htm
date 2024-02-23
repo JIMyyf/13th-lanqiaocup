@@ -1,0 +1,71 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Li Tang, XTU, LIC=P6F5U-SB8UW-KU24L-097TE-RZ7PU-MNW4U
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.36.0.0
+Toolchain Path:  E:\Keil 5.36\ARM\ARMCLANG6.21.1\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.33.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\19308\Desktop\Keil 5-project\13th lanqiaocupcube\MDK-ARM\Project.uvprojx
+Project File Date:  02/23/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'E:\Keil 5.36\ARM\ARMCLANG6.21.1\Bin'
+Build target 'Project'
+../Core/Src/main.c(82): warning: add explicit braces to avoid dangling else [-Wdangling-else]
+   82 |             else{
+      |             ^
+../Core/Src/main.c(127): warning: incompatible pointer types passing 'uint8_t (*)[1]' (aka 'unsigned char (*)[1]') to parameter of type 'uint8_t *' (aka 'unsigned char *') [-Wincompatible-pointer-types]
+  127 |     HAL_UART_Receive_IT(&huart1,&USART1_RECEIVE_DATA,USART1_RECEIVE_BUUFER_SIZE);
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32G4xx_HAL_Driver/Inc\stm32g4xx_hal_uart.h(1637): note: passing argument to parameter 'pData' here
+ 1637 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                           ^
+2 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=36552 RO-data=5380 RW-data=16 ZI-data=2368  
+FromELF: creating hex file...
+"Project\Project.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.0.0.pack
+                ARM.CMSIS.6.0.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.0.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32G4xx_DFP.1.5.0.pack
+                Keil.STM32G4xx_DFP.1.5.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Project
+  E:\Keil 5.36\ARM\CMSIS\6.0.0\CMSIS\Core\Include
+  E:\Keil 5.36\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:6.0.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
